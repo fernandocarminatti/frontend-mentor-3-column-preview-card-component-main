@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-content {
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 50px;
+    color: hsl(0, 0%, 95%);
+    border-radius: 10px 0 0 10px;
+}
+
+.sedans h1 {
+    margin: 35px 0;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.sedans p {
+    font-size: 15px;
+    margin: 0 0px 20px 0;
+    text-align: left;
+    line-height: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.suvs {
+    background: hsla(184, 100%, 22%);
+    padding: 50px;
+    color: hsl(0, 0%, 95%);
+}
+
+.suvs h1 {
+    margin: 35px 0;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.suvs p {
+    font-size: 15px;
+    margin: 0 20px 20px 0;
+    text-align: left;
+    line-height: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 50px;
+    color: hsl(0, 0%, 95%);
+    border-radius: 0 10px 10px 0;
+}
+
+.luxury h1 {
+    margin: 35px 0;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.luxury p {
+    font-size: 15px;
+    margin: 0 0px 20px 0;
+    text-align: left;
+    line-height: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn-learn {
+    margin: 90px 0;
+}
+
+.btn-learn a {
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    padding: 13px 35px;
+    border-radius: 40px;
+    color: #000;
+    background-color: hsl(0, 0%, 95%);
+    mix-blend-mode: screen;
+    transition: 0.2s;
+}
+
+.btn-learn a:hover {
+    background-color: #000;
+    border: 3px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        position: relative;
+        top: 50%;
+        transform: translate(-50%);
+        width: 300px;
+        height: 1350px;
+        margin: 50px 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+        width: 300px;
+        height: 100%;
+        margin: 10px auto;
+    }
+    .sedans {
+        height: 370px;
+        padding: 39px;
+        border-radius: 10px 10px 0 0px;
+    }
+
+    .sedans p {
+        margin: 0 0;
+    }
+
+    .suvs {
+        height: 370px;
+        padding: 39px;
+    }
+
+    .suvs p {
+        margin: 0 0;
+    
+    }
+
+    .luxury {
+        height: 370px;
+        padding: 39px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .btn-learn {
+        margin: 35px 0 10px 0;
+    }
+
+    .btn-learn a {
+        padding: 13px 25px;
+    }
+
+}
